@@ -1,5 +1,4 @@
 import math
-import ssl
 from flask import Flask, request, url_for, render_template, redirect, jsonify
 app = Flask(__name__)
 
@@ -1340,4 +1339,4 @@ def HQ_cal(EF,ED,ET,Cia,Rfc,ATnc):
     return HQ
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', ssl_context=ssl_context, port=3000, debug=True)
+    app.run(host='0.0.0.0', port=3000)
